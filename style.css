@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    display: grid;
+    font-family: 'Quicksand', sans-serif;
+    font-size:18pt;
+    grid-template-areas: 'header header header header'
+                         'navbar navbar navbar navbar'
+                         'section section section aside'
+                         'batata batata batata batata'
+                         'footer footer footer footer';
+    grid-template-rows: 10vh 10vh 60vh 20vh 30vh;
+    grid-template-columns: 24vw 24vw 24vw 26.5vw;
+   
+}
+header{
+    grid-area: header;
+    background-color: lightgreen;
+    display: flex;
+    justify-content:center;
+
+    
+}
+nav{
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    justify-content:center
+}
+
+nav a{
+    font-size: 20pt;
+    color: greenyellow;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+section{
+    grid-area: section;
+    background-color: lawngreen;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+section p{
+    justify-content: center;
+    display: flex;
+}
+
+section div iframe{
+    width: 100%;
+}
+
+aside{
+    grid-area: aside;
+    background-color: lightseagreen;
+    font-size: 13pt;
+}
+  
+footer{
+    grid-area: footer;
+    background-color: lightsalmon;
+}
+
+.batata{
+    grid-area: batata;
+    background-color: lightskyblue;
+    background-image: url(img/ney-caindo.jpg)
+}
+
+
+.fake p{
+font: size 1.2;
+}
+
+header img{
+    height:100%;
+    border-radius:40px;
+}
